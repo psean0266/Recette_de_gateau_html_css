@@ -17,47 +17,107 @@
             background-color: black;
             color: white;
             display: inline-block;
-            margin-left: 30px;
-            margin-top: 40px;
+            margin-top: 0px;
+            padding: 8px 18px;
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 16px;
             
+         }
+
+         div.categorie{
+            margin-bottom: -18px;
+            margin-top: 60px;
          }
          
 
          div.contenu{
                   background-color: white;
-                  margin:60% 10% 80% 10% ;
+                  margin:0% 10% 80% 10% ;
                   padding: 30px;
          }
 
          h1{
             text-align: center;
+            margin-bottom: 12px;
+            margin-top: 10px;
          }
 
          p.description{
             text-align: center;
             max-width:400px ;
             display: inline-block;
+            font-size: 14px;
          }
-
+/* 
          div.description{
             text-align: center;
+         } */
+         
+        .centre{
+            text-align: center;  
+            width: 100%;
+        }
+/* 
+         div.categorie{
+            text-align: center;
+         } */
+
+         div.separateur{
+            height: 1px;
+            width: 100px;
+            background-color: black;
+            margin-left: auto;
+            margin-right: auto;
+         }
+
+         table.info{
+            position: absolute;
+            bottom: 0;
+            width:100%;
+            color:white;
+            background-color: #6c829dC0;
+            height: 80px;
+         }
+
+         table.info td{
+            text-align: center;
+            font-size: 14px;
+            vertical-align: top;
+         }
+
+         table.info th{
+            font-size: 16px;
+            vertical-align: bottom;
+            padding-bottom: 8px;
+         }
+
+         div.info{
+            position: relative;
          }
 
         </style>
     </head>
     <body>
 
-        <div class = "contenu">
-
+        <div class="centre categorie">
             <p class ="categorie">Recette</p>
+        </div>
 
-            <h1>Gateau au chocolat</h1>
-            <div class ="description">
-            <p class="description">Cette recette facile du gateau au chocolat est un grand classique. Elle fera plaisir aux plus gourmands.</p>
+        <div class = "contenu">
+            <h1>Le gateau au chocolat</h1>
+
+            <div class="separateur">
+                 
             </div>
-            <img src="https://img-3.journaldesfemmes.fr/xNHzCsgpfQo_8J-OdpsaAkBGltA=/748x499/smart/3fab692feaaf4aeda820708bbb11ada6/recipe-jdf/10018954.jpg">
+            <div class ="centre">
+            <p class="description"> Cette recette facile du gateau au chocolat est un grand classique. Elle fera plaisir aux plus gourmands.</p>
+       </div>
+
+         <div class="info">
+               <img  class="centre" style="display:block ;"src="https://img-3.journaldesfemmes.fr/xNHzCsgpfQo_8J-OdpsaAkBGltA=/748x499/smart/3fab692feaaf4aeda820708bbb11ada6/recipe-jdf/10018954.jpg">
     
-            <table border="1">
+            <table class="info">
                 <tr>
                     <th>Difficulté</th>
                     <th>Préparation</th>
@@ -71,7 +131,7 @@
                     <td>35 min</td>
                 </tr>
             </table>
-    
+        </div>
             <h2>Ingrédients</h2>
             <ul>
                 <li>Chocolat noir : 200 g</li>
@@ -90,7 +150,9 @@
             </ol>
         
 
-        </div>
+        
+            </div>
+          
         
 
 
